@@ -1,3 +1,5 @@
-import pet from './pet'
+import product from "./product";
+import productCategory from "./productCategory";
 
-export const schemaTypes = [pet]
+
+export const schemaTypes = [product, productCategory]

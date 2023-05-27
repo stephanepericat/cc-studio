@@ -1,7 +1,7 @@
 export default {
-  name: 'pet',
+  name: 'productCategory',
   type: 'document',
-	title: 'Pet',
+	title: 'Product Category',
   fields: [
     {
       name: 'name',
