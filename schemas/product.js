@@ -43,6 +43,9 @@ export default {
       name: 'visual',
       type: 'image',
       title: 'Visual',
+      options: {
+        hotspot: true,
+      },
     },
   ],
   preview: {
