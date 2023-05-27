@@ -1,3 +1,5 @@
+import { baseLanguage } from "../config/languages"
+
 export default {
   name: 'product',
   type: 'document',
@@ -5,7 +7,7 @@ export default {
   fields: [
     {
       name: 'name',
-      type: 'string',
+      type: 'localeString',
       title: 'Name',
       validation: Rule => Rule.required(),
     },
@@ -18,9 +20,9 @@ export default {
     },
     {
       name: 'description',
-      type: 'text',
+      type: 'localeText',
       title: 'Description',
-      validation: Rule => Rule.required().max(256),
+      validation: Rule => Rule.required(),
     },
     {
       name: 'url',
@@ -33,5 +35,10 @@ export default {
       type: 'image',
       title: 'Visual',
     },
-  ]
+  ],
+  preview: {
+    select: {
+      title: `name.${baseLanguage.id}`
+    }
+  },
 }
