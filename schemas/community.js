@@ -1,9 +1,9 @@
 import { baseLanguage } from "../config/languages"
 
 export default {
-  name: 'product',
+  name: 'community',
   type: 'document',
-	title: 'Product',
+	title: 'Community',
   fields: [
     {
       name: 'title',
@@ -24,7 +24,7 @@ export default {
       name: 'category',
       type: 'reference',
       title: 'Category',
-      to: [{type: 'productCategory'}],
+      to: [{type: 'communityCategory'}],
       validation: Rule => Rule.required(),
     },
     {
@@ -37,7 +37,6 @@ export default {
       name: 'url',
       type: 'url',
       title: 'URL',
-      validation: Rule => Rule.required(),
     },
     {
       name: 'visual',
