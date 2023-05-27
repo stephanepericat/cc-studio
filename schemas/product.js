@@ -6,9 +6,18 @@ export default {
 	title: 'Product',
   fields: [
     {
-      name: 'name',
+      name: 'title',
       type: 'localeString',
-      title: 'Name',
+      title: 'Title',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'uri',
+      type: 'slug',
+      title: 'URI',
+      options: {
+        source: `title.${baseLanguage.id}`,
+      },
       validation: Rule => Rule.required(),
     },
     {
@@ -38,7 +47,7 @@ export default {
   ],
   preview: {
     select: {
-      title: `name.${baseLanguage.id}`
+      title: `title.${baseLanguage.id}`
     }
   },
 }
