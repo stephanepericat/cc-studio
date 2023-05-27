@@ -8,7 +8,7 @@ const devOnlyPlugins = [getStartedPlugin()]
 
 export default defineConfig({
   name: 'default',
-  title: 'salmon-raccoon',
+  title: 'cccc.org',
 
   projectId: 'yt0dcu6v',
   dataset: 'production',
