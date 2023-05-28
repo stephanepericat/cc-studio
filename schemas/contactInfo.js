@@ -4,16 +4,6 @@ export default {
   title: 'Contact Info',
   name: 'contactInfo',
   type: 'object',
-  fieldsets: [
-    {
-      title: 'Address',
-      name: 'address',
-    },
-    {
-      title: 'Contact',
-      name: 'contact',
-    },
-  ],
   initialValue: {
     country: 'US'
   },
@@ -22,31 +12,26 @@ export default {
       title: 'Street Adress 1',
       name: 'streetAdressOne',
       type: 'string',
-      fieldset: 'address'
     },
     {
       title: 'Street Adress 2',
       name: 'streetAdressTwo',
       type: 'string',
-      fieldset: 'address'
     },
     {
       title: 'City',
       name: 'city',
       type: 'string',
-      fieldset: 'address'
     },
     {
       title: 'Zip Code',
       name: 'zipCode',
       type: 'string',
-      fieldset: 'address'
     },
     {
       title: 'Country',
       name: 'country',
       type: 'string',
-      fieldset: 'address',
       options: {
         list: [...countries],
       },
@@ -55,19 +40,29 @@ export default {
       title: 'Phone Number',
       name: 'phoneNumber',
       type: 'string',
-      fieldset: 'contact'
     },
     {
       title: 'E-mail',
       name: 'email',
       type: 'string',
-      fieldset: 'contact'
+      validation: Rule => Rule.custom(email => {
+        if (typeof email === 'undefined') {
+          return true // Allow undefined values
+        }
+        
+        return email.toLowerCase()
+          .match(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          )
+
+          ? true
+          : 'This is not an email'
+      })
     },
     {
       title: 'Website',
       name: 'website',
       type: 'string',
-      fieldset: 'contact'
     },
   ],
 }

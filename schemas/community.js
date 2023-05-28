@@ -38,7 +38,6 @@ export default {
       name: 'description',
       type: 'localeBlock',
       title: 'Description',
-      validation: Rule => Rule.required(),
     },
     {
       name: 'contactInfo',
