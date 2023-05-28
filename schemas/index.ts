@@ -1,3 +1,4 @@
+import contactInfo from "./contactInfo";
 import localeBlock from "./localeBlock";
 import localeString from "./localeString";
 import localeText from "./localeText";
@@ -12,6 +13,7 @@ import product from "./product";
 import productCategory from "./productCategory";
 
 export const schemaTypes = [
+  contactInfo,
   localeBlock,
   localeString,
   localeText,
