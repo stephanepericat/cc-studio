@@ -47,8 +47,9 @@ export default {
   ],
   preview: {
     select: {
+      media: 'visual',
+      subtitle: `email`,
       title: 'nickname',
-      media: 'visual'
     }
   },
 }

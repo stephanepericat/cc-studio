@@ -33,6 +33,7 @@ export default {
   ],
   preview: {
     select: {
+      subtitle: `source`,
       title: `title.${baseLanguage.id}`
     }
   },

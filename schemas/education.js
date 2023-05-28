@@ -51,6 +51,8 @@ export default {
   ],
   preview: {
     select: {
+      media: 'visual',
+      subtitle: `category.name.${baseLanguage.id}`,
       title: `title.${baseLanguage.id}`
     }
   },
