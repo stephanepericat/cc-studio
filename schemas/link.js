@@ -12,6 +12,13 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'author',
+      type: 'reference',
+      title: 'Author',
+      to: [{type: 'author'}],
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'source',
       type: 'string',
       title: 'Source',

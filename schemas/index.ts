@@ -2,6 +2,7 @@ import localeBlock from "./localeBlock";
 import localeString from "./localeString";
 import localeText from "./localeText";
 
+import author from "./author";
 import community from "./community";
 import communityCategory from "./communityCategory";
 import education from "./education";
@@ -14,6 +15,7 @@ export const schemaTypes = [
   localeBlock,
   localeString,
   localeText,
+  author,
   community,
   communityCategory,
   education,
