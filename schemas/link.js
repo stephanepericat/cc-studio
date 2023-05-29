@@ -19,6 +19,13 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'category',
+      type: 'reference',
+      title: 'Category',
+      to: [{type: 'linkCategory'}],
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'source',
       type: 'string',
       title: 'Source',

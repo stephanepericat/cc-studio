@@ -1,6 +1,6 @@
 import contactInfo from "./contactInfo";
 import localeBlock from "./localeBlock";
-import localeString from "./localeString";
+import localeString from "./localString";
 import localeText from "./localeText";
 
 import author from "./author";
@@ -9,6 +9,7 @@ import communityCategory from "./communityCategory";
 import education from "./education";
 import educationCategory from "./educationCategory";
 import link from "./link";
+import linkCategory from "./linkCategory";
 import product from "./product";
 import productCategory from "./productCategory";
 
@@ -23,6 +24,7 @@ export const schemaTypes = [
   education,
   educationCategory,
   link,
+  linkCategory,
   product,
   productCategory,
 ]
