@@ -37,6 +37,14 @@ export default {
       title: 'URL',
       validation: Rule => Rule.required(),
     },
+    {
+      name: 'visual',
+      type: 'image',
+      title: 'Visual',
+      options: {
+        hotspot: true,
+      },
+    },
   ],
   preview: {
     select: {
