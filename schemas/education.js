@@ -43,7 +43,7 @@ export default {
     {
       name: 'visual',
       type: 'image',
-      title: 'Visual',
+      title: 'Thumbnail',
       options: {
         hotspot: true,
       },

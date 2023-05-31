@@ -39,7 +39,7 @@ export default {
     {
       name: 'visual',
       type: 'image',
-      title: 'Visual',
+      title: 'Avatar',
       options: {
         hotspot: true,
       },

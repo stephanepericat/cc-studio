@@ -40,7 +40,7 @@ export default {
     {
       name: 'visual',
       type: 'image',
-      title: 'Visual',
+      title: 'Thumbnail',
       options: {
         hotspot: true,
       },
@@ -48,6 +48,7 @@ export default {
   ],
   preview: {
     select: {
+      media: 'visual',
       subtitle: `source`,
       title: `title.${baseLanguage.id}`
     }
