@@ -3,7 +3,7 @@ import { baseLanguage } from "../config/languages"
 export default {
   name: 'link',
   type: 'document',
-	title: 'Link',
+	title: 'News',
   fields: [
     {
       name: 'title',
