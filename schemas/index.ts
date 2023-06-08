@@ -8,6 +8,8 @@ import community from "./community";
 import communityCategory from "./communityCategory";
 import education from "./education";
 import educationCategory from "./educationCategory";
+import feedAuthor from "./feedAuthor";
+import feedSettings from "./feedSettings";
 import link from "./link";
 import linkCategory from "./linkCategory";
 import product from "./product";
@@ -23,6 +25,8 @@ export const schemaTypes = [
   communityCategory,
   education,
   educationCategory,
+  feedAuthor,
+  feedSettings,
   link,
   linkCategory,
   product,
