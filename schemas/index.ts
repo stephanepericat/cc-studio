@@ -6,6 +6,7 @@ import localeText from "./localeText";
 import author from "./author";
 import community from "./community";
 import communityCategory from "./communityCategory";
+import disclaimer from "./disclaimer";
 import education from "./education";
 import educationCategory from "./educationCategory";
 import feedAuthor from "./feedAuthor";
@@ -23,6 +24,7 @@ export const schemaTypes = [
   author,
   community,
   communityCategory,
+  disclaimer,
   education,
   educationCategory,
   feedAuthor,
