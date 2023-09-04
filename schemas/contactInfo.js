@@ -31,10 +31,8 @@ export default {
     {
       title: 'Country',
       name: 'country',
-      type: 'string',
-      options: {
-        list: [...countries],
-      },
+      type: 'reference',
+      to: [{type: 'country'}],
     },
     {
       title: 'Phone Number',
