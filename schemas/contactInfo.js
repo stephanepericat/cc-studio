@@ -5,7 +5,9 @@ export default {
   name: 'contactInfo',
   type: 'object',
   initialValue: {
-    country: 'US'
+    country: {
+      _ref: 'N59uZoOeVwhI1FgapL3pbz'
+    }
   },
   fields: [
     {
