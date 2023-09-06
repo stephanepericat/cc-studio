@@ -7,13 +7,13 @@ import author from "./author";
 import community from "./community";
 import communityCategory from "./communityCategory";
 import country from "./country";
-import disclaimer from "./disclaimer";
 import education from "./education";
 import educationCategory from "./educationCategory";
 import feedAuthor from "./feedAuthor";
 import feedSettings from "./feedSettings";
 import link from "./link";
 import linkCategory from "./linkCategory";
+import policy from "./policy";
 import product from "./product";
 import productCategory from "./productCategory";
 
@@ -26,13 +26,13 @@ export const schemaTypes = [
   author,
   community,
   communityCategory,
-  disclaimer,
   education,
   educationCategory,
   feedAuthor,
   feedSettings,
   link,
   linkCategory,
+  policy,
   product,
   productCategory,
 ]
