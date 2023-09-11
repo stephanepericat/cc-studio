@@ -8,7 +8,7 @@ export default defineConfig([
   {
     name: 'production-workspace',
     title: 'That Covid Life CMS - Production',
-    basePath: '/production',
+    basePath: '/live',
   
     projectId: 'yt0dcu6v',
     dataset: 'production',
