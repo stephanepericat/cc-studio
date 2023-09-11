@@ -7,7 +7,7 @@ import {schemaTypes} from './schemas'
 export default defineConfig([
   {
     name: 'production-workspace',
-    title: 'That Covid Life CMS - Production',
+    title: 'That Covid Life CMS - Live',
     basePath: '/live',
   
     projectId: 'yt0dcu6v',
