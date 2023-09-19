@@ -15,7 +15,7 @@ export default {
     title: lang.title,
     name: lang.id,
     type: 'array',
-    of: [{type: 'block'}],
+    of: [{type: 'block'}, {type: 'image'}],
     fieldset: lang.isDefault ? null : 'translations'
   }))
 }
