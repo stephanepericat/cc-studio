@@ -1,9 +1,9 @@
 import { baseLanguage } from "../config/languages"
 
 export default {
-  name: 'product',
+  name: 'resource',
   type: 'document',
-	title: 'Products',
+	title: 'Resources',
   fields: [
     {
       name: 'title',
@@ -12,13 +12,9 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      name: 'uri',
-      type: 'slug',
-      title: 'URI',
-      options: {
-        source: `title.${baseLanguage.id}`,
-      },
-      validation: Rule => Rule.required(),
+      name: 'description',
+      type: 'localeText',
+      title: 'Description',
     },
     {
       name: 'author',
@@ -31,13 +27,7 @@ export default {
       name: 'category',
       type: 'reference',
       title: 'Category',
-      to: [{type: 'productCategory'}],
-      validation: Rule => Rule.required(),
-    },
-    {
-      name: 'description',
-      type: 'localeBlock',
-      title: 'Description',
+      to: [{type: 'resourceCategory'}],
       validation: Rule => Rule.required(),
     },
     {
@@ -58,8 +48,8 @@ export default {
   preview: {
     select: {
       media: 'visual',
-      subtitle: `category.name.${baseLanguage.id}`,
-      title: `title.${baseLanguage.id}`,
+      subtitle: `source`,
+      title: `title.${baseLanguage.id}`
     }
   },
 }

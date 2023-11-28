@@ -16,6 +16,8 @@ import linkCategory from "./linkCategory";
 import policy from "./policy";
 import product from "./product";
 import productCategory from "./productCategory";
+import resource from "./resource";
+import resourceCategory from "./resourceCategory";
 
 export const schemaTypes = [
   country,
@@ -35,4 +37,6 @@ export const schemaTypes = [
   policy,
   product,
   productCategory,
-]
+  resource,
+  resourceCategory,
+];

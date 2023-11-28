@@ -1,9 +1,9 @@
 import { baseLanguage } from "../config/languages"
 
 export default {
-  name: 'communityCategory',
+  name: 'resourceCategory',
   type: 'document',
-	title: 'Community Categories',
+	title: 'Resource Categories',
   fields: [
     {
       name: 'name',

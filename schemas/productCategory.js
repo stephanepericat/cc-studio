@@ -3,7 +3,7 @@ import { baseLanguage } from "../config/languages"
 export default {
   name: 'productCategory',
   type: 'document',
-	title: 'Product Category',
+	title: 'Product Categories',
   fields: [
     {
       name: 'name',

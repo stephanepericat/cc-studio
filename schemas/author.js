@@ -3,7 +3,7 @@ import { baseLanguage } from "../config/languages"
 export default {
   name: 'author',
   type: 'document',
-	title: 'Author',
+	title: 'Authors',
   fields: [
     {
       name: 'nickname',
