@@ -3,7 +3,7 @@ import { baseLanguage } from "../config/languages"
 export default {
   name: 'educationCategory',
   type: 'document',
-	title: 'Education Category',
+	title: 'Education Categories',
   fields: [
     {
       name: 'name',
