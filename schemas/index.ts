@@ -18,6 +18,8 @@ import product from "./product";
 import productCategory from "./productCategory";
 import resource from "./resource";
 import resourceCategory from "./resourceCategory";
+import scientificLibrary from './scientificLibrary';
+import scientificLibraryCategory from "./scientificLibraryCategory";
 
 export const schemaTypes = [
   country,
@@ -39,4 +41,6 @@ export const schemaTypes = [
   productCategory,
   resource,
   resourceCategory,
+  scientificLibrary,
+  scientificLibraryCategory,
 ];
