@@ -7,7 +7,7 @@ export default {
   fields: [
     {
       name: 'title',
-      type: 'localeString',
+      type: 'string',
       title: 'Title',
       validation: Rule => Rule.required(),
     },
@@ -61,7 +61,7 @@ export default {
     select: {
       media: 'visual',
       subtitle: `source`,
-      title: `title.${baseLanguage.id}`
+      title: 'title'
     }
   },
 }

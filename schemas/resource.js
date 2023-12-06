@@ -7,7 +7,7 @@ export default {
   fields: [
     {
       name: 'title',
-      type: 'localeString',
+      type: 'string',
       title: 'Title',
       validation: Rule => Rule.required(),
     },
@@ -37,6 +37,12 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'language',
+      type: 'language',
+      title: 'Original Language',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'visual',
       type: 'image',
       title: 'Thumbnail',
@@ -48,8 +54,8 @@ export default {
   preview: {
     select: {
       media: 'visual',
-      subtitle: `source`,
-      title: `title.${baseLanguage.id}`
+      subtitle: 'language',
+      title: 'title'
     }
   },
 }
