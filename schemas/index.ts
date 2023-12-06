@@ -11,6 +11,7 @@ import education from "./education";
 import educationCategory from "./educationCategory";
 import feedAuthor from "./feedAuthor";
 import feedSettings from "./feedSettings";
+import languages from "./languages";
 import link from "./link";
 import linkCategory from "./linkCategory";
 import policy from "./policy";
@@ -24,6 +25,7 @@ import scientificLibraryCategory from "./scientificLibraryCategory";
 export const schemaTypes = [
   country,
   contactInfo,
+  languages,
   localeBlock,
   localeString,
   localeText,

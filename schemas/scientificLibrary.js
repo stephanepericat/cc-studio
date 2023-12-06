@@ -43,6 +43,12 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'language',
+      type: 'language',
+      title: 'Original Language',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'visual',
       type: 'image',
       title: 'Thumbnail',
