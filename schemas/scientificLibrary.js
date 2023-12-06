@@ -1,7 +1,7 @@
 import { baseLanguage } from "../config/languages"
 
 export default {
-  name: 'scientificLibrary',
+  name: 'scientific-library',
   type: 'document',
 	title: 'Scientific Library',
   fields: [
