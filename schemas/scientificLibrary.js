@@ -49,6 +49,12 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'publicationDate',
+      type: 'date',
+      title: 'Publication Date',
+      // validation: Rule => Rule.required(),
+    },
+    {
       name: 'visual',
       type: 'image',
       title: 'Thumbnail',
