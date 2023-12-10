@@ -14,7 +14,7 @@ export default {
     {
       name: 'description',
       type: 'localeText',
-      title: 'Description',
+      title: 'Summary',
     },
     {
       name: 'author',
