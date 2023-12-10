@@ -12,9 +12,9 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      name: 'description',
+      name: 'summary',
       type: 'localeText',
-      title: 'Description',
+      title: 'Summary',
     },
     {
       name: 'author',
