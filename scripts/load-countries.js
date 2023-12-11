@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
 
 import { createClient } from '@sanity/client'
-import countries from './countries.js'
+import countries from '../config/countries.js'
 
 dotenv.config()
 
