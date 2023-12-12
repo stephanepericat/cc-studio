@@ -4,6 +4,9 @@ export default {
   name: 'scientific-library',
   type: 'document',
 	title: 'Scientific Library',
+  initialValue: {
+    language: 'en'
+  },
   fields: [
     {
       name: 'title',

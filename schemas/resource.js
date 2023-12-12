@@ -4,6 +4,9 @@ export default {
   name: 'resource',
   type: 'document',
 	title: 'Resources',
+  initialValue: {
+    language: 'en'
+  },
   fields: [
     {
       name: 'title',
