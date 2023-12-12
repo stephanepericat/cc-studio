@@ -1,13 +1,16 @@
-import { baseLanguage } from "../config/languages"
+// import { baseLanguage } from "../config/languages"
 
 export default {
   name: 'link',
   type: 'document',
 	title: 'News',
+  initialValue: {
+    language: 'en'
+  },
   fields: [
     {
       name: 'title',
-      type: 'localeString',
+      type: 'string',
       title: 'Title',
       validation: Rule => Rule.required(),
     },
@@ -38,6 +41,12 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'language',
+      type: 'language',
+      title: 'Original Language',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'publicationDate',
       type: 'date',
       title: 'Publication Date',
@@ -56,7 +65,7 @@ export default {
     select: {
       media: 'visual',
       subtitle: `source`,
-      title: `title.${baseLanguage.id}`
+      title: `title`
     }
   },
 }
