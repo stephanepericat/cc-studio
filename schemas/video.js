@@ -42,7 +42,8 @@ export default {
       ],
       options: {
         layout: 'dropdown'
-      }
+      },
+      validation: Rule => Rule.required(),
     },
     {
       name: 'author',
