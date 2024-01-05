@@ -19,14 +19,10 @@ const client = createClient({
 // cleaning old tags
 await client.delete({query: '*[_type == "tag"]'})
 
-// console.log('client', client)
+// getting categories
 const categories = await client.fetch('*[_type in ["communityCategory", "educationCategory", "linkCategory", "productCategory", "resourceCategory", "scientificLibraryCategory"]]')
-const uniqueCategories = _.uniqBy(categories, 'name.en').map(({ name, uri }) => {
-  return {
-    name,
-    uri,
-  }
-})
+// cleaning up categories
+const uniqueCategories = _.uniqBy(categories, 'name.en').map(({ name, uri }) => ({ name, uri }))
 
 const loadTag = async (name, uri) => {
   const doc = {
@@ -38,7 +34,7 @@ const loadTag = async (name, uri) => {
   return await client.create(doc)
 }
 
-console.log('categories', uniqueCategories)
+console.log('categories', uniqueCategories.map(({name}) => name.en))
 
 uniqueCategories.forEach(async ({ name, uri }) => {
   await loadTag(name, uri)
