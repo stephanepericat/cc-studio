@@ -70,7 +70,7 @@ export default {
   preview: {
     select: {
       media: 'visual',
-      subtitle: 'language',
+      subtitle: 'summary.en',
       title: 'title'
     }
   },
