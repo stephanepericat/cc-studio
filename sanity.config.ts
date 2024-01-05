@@ -2,7 +2,6 @@ import {defineConfig} from 'sanity'
 import {visionTool} from '@sanity/vision'
 import {deskTool} from 'sanity/desk'
 import {media} from 'sanity-plugin-media'
-import {tags} from 'sanity-plugin-tags'
 import {schemaTypes} from './schemas'
 
 export default defineConfig([
@@ -17,7 +16,6 @@ export default defineConfig([
     plugins: [
       deskTool(),
       media(),
-      tags(),
       visionTool(),
     ],
   
@@ -36,7 +34,6 @@ export default defineConfig([
     plugins: [
       deskTool(),
       media(),
-      tags(),
       visionTool(),
     ],
   

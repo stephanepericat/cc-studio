@@ -5739,21 +5739,6 @@ react-select@^5.3.2:
     react-transition-group "^4.3.0"
     use-isomorphic-layout-effect "^1.1.2"
 
-react-select@^5.7.0:
-  version "5.8.0"
-  resolved "https://registry.yarnpkg.com/react-select/-/react-select-5.8.0.tgz#bd5c467a4df223f079dd720be9498076a3f085b5"
-  integrity sha512-TfjLDo58XrhP6VG5M/Mi56Us0Yt8X7xD6cDybC7yoRMUNm7BGO7qk8J0TLQOua/prb8vUOtsfnXZwfm30HGsAA==
-  dependencies:
-    "@babel/runtime" "^7.12.0"
-    "@emotion/cache" "^11.4.0"
-    "@emotion/react" "^11.8.1"
-    "@floating-ui/dom" "^1.0.1"
-    "@types/react-transition-group" "^4.4.0"
-    memoize-one "^6.0.0"
-    prop-types "^15.6.0"
-    react-transition-group "^4.3.0"
-    use-isomorphic-layout-effect "^1.1.2"
-
 react-style-proptype@^3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/react-style-proptype/-/react-style-proptype-3.2.2.tgz#d8e998e62ce79ec35b087252b90f19f1c33968a0"
@@ -6098,14 +6083,6 @@ sanity-plugin-media@^2.2.2:
     redux-observable "^2.0.0"
     rxjs "^7.0.0"
     zod "^3.21.4"
-
-sanity-plugin-tags@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/sanity-plugin-tags/-/sanity-plugin-tags-2.0.1.tgz#9f74af7148685e7e3640471cb8e476db1579c806"
-  integrity sha512-oy11bDcvf3o/HnFw2KZRGANxRjR/2x+ts3yH/bWbpl7MRHDEBXajzF2vc7rPE8dekclKz0f0L+Xfm1ksjQPMLw==
-  dependencies:
-    "@sanity/incompatible-plugin" "^1.0.4"
-    react-select "^5.7.0"
 
 sanity@^3.20.1:
   version "3.20.1"

@@ -1,5 +1,3 @@
-import { baseLanguage } from "../config/languages"
-
 export default {
   name: 'video',
   type: 'document',
@@ -31,16 +29,20 @@ export default {
       title: 'Summary',
     },
     {
-      name: 'articleTags',
-      type: 'tags',
+      name: 'tags',
       title: 'Tags',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [
+            { type: 'tag'}
+          ]
+        }
+      ],
       options: {
-        allowCreate: true,
-        onCreate: (value) => ({
-          label: value,
-          value: value.toLowerCase().replace(/\W/g, '-'),
-        })
-      },
+        layout: 'dropdown'
+      }
     },
     {
       name: 'author',
@@ -49,13 +51,6 @@ export default {
       to: [{type: 'author'}],
       validation: Rule => Rule.required(),
     },
-    // {
-    //   name: 'category',
-    //   type: 'reference',
-    //   title: 'Category',
-    //   to: [{type: 'resourceCategory'}],
-    //   validation: Rule => Rule.required(),
-    // },
     {
       name: 'language',
       type: 'language',

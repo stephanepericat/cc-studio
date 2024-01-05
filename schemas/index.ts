@@ -1,27 +1,28 @@
-import contactInfo from "./contactInfo";
-import localeBlock from "./localeBlock";
-import localeString from "./localString";
-import localeText from "./localeText";
+import contactInfo from './contactInfo'
+import localeBlock from './localeBlock'
+import localeString from './localString'
+import localeText from './localeText'
 
-import author from "./author";
-import community from "./community";
-import communityCategory from "./communityCategory";
-import country from "./country";
-import education from "./education";
-import educationCategory from "./educationCategory";
-import feedAuthor from "./feedAuthor";
-import feedSettings from "./feedSettings";
-import languages from "./languages";
-import link from "./link";
-import linkCategory from "./linkCategory";
-import policy from "./policy";
-import product from "./product";
-import productCategory from "./productCategory";
-import resource from "./resource";
-import resourceCategory from "./resourceCategory";
-import scientificLibrary from "./scientificLibrary";
-import scientificLibraryCategory from "./scientificLibraryCategory";
-import video from "./video";
+import author from './author'
+import community from './community'
+import communityCategory from './communityCategory'
+import country from './country'
+import education from './education'
+import educationCategory from './educationCategory'
+import feedAuthor from './feedAuthor'
+import feedSettings from './feedSettings'
+import languages from './languages'
+import link from './link'
+import linkCategory from './linkCategory'
+import policy from './policy'
+import product from './product'
+import productCategory from './productCategory'
+import resource from './resource'
+import resourceCategory from './resourceCategory'
+import scientificLibrary from './scientificLibrary'
+import scientificLibraryCategory from './scientificLibraryCategory'
+import tags from './tag'
+import video from './video'
 
 export const schemaTypes = [
   country,
@@ -46,5 +47,6 @@ export const schemaTypes = [
   resourceCategory,
   scientificLibrary,
   scientificLibraryCategory,
+  tags,
   video,
-];
+]
