@@ -13,6 +13,16 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'uri',
+      type: 'slug',
+      title: 'URI',
+      options: {
+        maxLength: 128,
+        source: 'title',
+      },
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'embedCode',
       type: 'text',
       title: 'Embed Code',
