@@ -48,7 +48,7 @@ export default {
     {
       name: 'language',
       type: 'language',
-      title: 'Original Language',
+      title: 'Content Language',
       validation: Rule => Rule.required(),
     },
     {
