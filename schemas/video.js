@@ -1,9 +1,7 @@
-import { baseLanguage } from "../config/languages"
-
 export default {
-  name: 'scientific-library',
+  name: 'video',
   type: 'document',
-	title: 'Scientific Library',
+	title: 'Videos',
   initialValue: {
     language: 'en'
   },
@@ -15,9 +13,47 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'uri',
+      type: 'slug',
+      title: 'URI',
+      options: {
+        maxLength: 128,
+        source: 'title',
+      },
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'embedCode',
+      type: 'text',
+      title: 'Embed Code',
+    },
+    {
+      name: 'url',
+      type: 'url',
+      title: 'URL',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'summary',
       type: 'localeText',
       title: 'Summary',
+    },
+    {
+      name: 'tags',
+      title: 'Tags',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [
+            { type: 'tag'}
+          ]
+        }
+      ],
+      options: {
+        layout: 'dropdown'
+      },
+      validation: Rule => Rule.required(),
     },
     {
       name: 'author',
@@ -27,35 +63,10 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      name: 'category',
-      type: 'reference',
-      title: 'Category',
-      to: [{type: 'scientificLibraryCategory'}],
-      validation: Rule => Rule.required(),
-    },
-    {
-      name: 'url',
-      type: 'url',
-      title: 'URL',
-      validation: Rule => Rule.required(),
-    },
-    {
-      name: 'source',
-      type: 'string',
-      title: 'Source',
-      validation: Rule => Rule.required(),
-    },
-    {
       name: 'language',
       type: 'language',
       title: 'Content Language',
       validation: Rule => Rule.required(),
-    },
-    {
-      name: 'publicationDate',
-      type: 'date',
-      title: 'Publication Date',
-      // validation: Rule => Rule.required(),
     },
     {
       name: 'visual',
@@ -69,7 +80,7 @@ export default {
   preview: {
     select: {
       media: 'visual',
-      subtitle: `source`,
+      subtitle: 'summary.en',
       title: 'title'
     }
   },
