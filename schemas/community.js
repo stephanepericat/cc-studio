@@ -1,4 +1,5 @@
 import { baseLanguage } from "../config/languages"
+import { uriGenerator } from '../scripts/hash-generator'
 
 export default {
   name: 'community',
@@ -17,6 +18,7 @@ export default {
       title: 'URI',
       options: {
         source: `title.${baseLanguage.id}`,
+        slugify: uriGenerator,
       },
       validation: Rule => Rule.required(),
     },

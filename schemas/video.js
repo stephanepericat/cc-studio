@@ -1,3 +1,5 @@
+import { uriGenerator } from '../scripts/hash-generator'
+
 export default {
   name: 'video',
   type: 'document',
@@ -17,8 +19,9 @@ export default {
       type: 'slug',
       title: 'URI',
       options: {
-        maxLength: 128,
+        maxLength: 10,
         source: 'title',
+        slugify: uriGenerator
       },
       validation: Rule => Rule.required(),
     },
