@@ -27,10 +27,20 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      name: 'category',
-      type: 'reference',
-      title: 'Category',
-      to: [{type: 'resourceCategory'}],
+      name: 'tags',
+      title: 'Tags',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [
+            { type: 'tag'}
+          ]
+        }
+      ],
+      options: {
+        layout: 'dropdown'
+      },
       validation: Rule => Rule.required(),
     },
     {
@@ -57,7 +67,7 @@ export default {
   preview: {
     select: {
       media: 'visual',
-      subtitle: 'language',
+      subtitle: `tags.0.name.${baseLanguage.id}`,
       title: 'title'
     }
   },
