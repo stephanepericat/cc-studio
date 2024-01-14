@@ -26,6 +26,23 @@ export default {
       type: 'reference',
       title: 'Category',
       to: [{type: 'linkCategory'}],
+      // validation: Rule => Rule.required(),
+    },
+    {
+      name: 'tags',
+      title: 'Tags',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [
+            { type: 'tag'}
+          ]
+        }
+      ],
+      options: {
+        layout: 'dropdown'
+      },
       validation: Rule => Rule.required(),
     },
     {
