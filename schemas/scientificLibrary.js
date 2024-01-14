@@ -27,13 +27,6 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      name: 'category',
-      type: 'reference',
-      title: 'Category',
-      to: [{type: 'scientificLibraryCategory'}],
-      // validation: Rule => Rule.required(),
-    },
-    {
       name: 'tags',
       title: 'Tags',
       type: 'array',

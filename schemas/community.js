@@ -30,13 +30,6 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      name: 'category',
-      type: 'reference',
-      title: 'Category',
-      to: [{type: 'communityCategory'}],
-      // validation: Rule => Rule.required(),
-    },
-    {
       name: 'tags',
       title: 'Tags',
       type: 'array',
