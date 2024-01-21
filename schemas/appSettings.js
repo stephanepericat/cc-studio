@@ -43,11 +43,16 @@ export default {
       title: 'Value',
       hidden: ({ document }) => document.type !== 'number',
     },
+    {
+      name: 'description',
+      type: 'text',
+      title: 'Description',
+    },
   ],
   preview: {
     select: {
       title: 'key',
-      subtitle: 'value'
+      subtitle: 'description'
     }
   },
 }
