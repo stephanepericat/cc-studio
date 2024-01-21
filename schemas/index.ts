@@ -3,6 +3,7 @@ import localeBlock from './localeBlock'
 import localeString from './localString'
 import localeText from './localeText'
 
+import appSettings from './appSettings'
 import author from './author'
 import community from './community'
 import country from './country'
@@ -19,6 +20,7 @@ import tags from './tag'
 import video from './video'
 
 export const schemaTypes = [
+  appSettings,
   country,
   contactInfo,
   languages,
