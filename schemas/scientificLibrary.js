@@ -5,7 +5,8 @@ export default {
   type: 'document',
 	title: 'Scientific Library',
   initialValue: {
-    language: 'en'
+    freeAccess: true,
+    language: 'en',
   },
   fields: [
     {
@@ -66,6 +67,11 @@ export default {
       type: 'date',
       title: 'Publication Date',
       // validation: Rule => Rule.required(),
+    },
+    {
+      name: 'freeAccess',
+      type: 'boolean',
+      title: 'Is it Free Access?',
     },
     {
       name: 'visual',
