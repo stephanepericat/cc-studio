@@ -75,7 +75,6 @@ export default {
       name: 'publicationDate',
       type: 'date',
       title: 'Publication Date',
-      // validation: Rule => Rule.required(),
     },
     {
       name: 'visual',
