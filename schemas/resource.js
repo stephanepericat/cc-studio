@@ -20,13 +20,6 @@ export default {
       title: 'Summary',
     },
     {
-      name: 'author',
-      type: 'reference',
-      title: 'Author',
-      to: [{type: 'author'}],
-      validation: Rule => Rule.required(),
-    },
-    {
       name: 'tags',
       title: 'Tags',
       type: 'array',
