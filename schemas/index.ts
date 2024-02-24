@@ -8,6 +8,7 @@ import author from './author'
 import community from './community'
 import country from './country'
 import education from './education'
+import event from './event'
 import feedAuthor from './feedAuthor'
 import feedSettings from './feedSettings'
 import languages from './languages'
@@ -30,6 +31,7 @@ export const schemaTypes = [
   author,
   community,
   education,
+  event,
   feedAuthor,
   feedSettings,
   link,
