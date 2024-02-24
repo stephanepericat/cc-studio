@@ -5,8 +5,9 @@ export default {
   type: 'document',
 	title: 'Scientific Library',
   initialValue: {
-    freeAccess: true,
     language: 'en',
+    limitedAccess: false,
+    premiumAccess: false,
   },
   fields: [
     {
@@ -61,9 +62,14 @@ export default {
       title: 'Publication Date',
     },
     {
-      name: 'freeAccess',
+      name: 'limitedAccess',
       type: 'boolean',
-      title: 'Is it Free Access?',
+      title: 'Is it Limited Access?',
+    },
+    {
+      name: 'premiumAccess',
+      type: 'boolean',
+      title: 'Is it Premium Access?',
     },
     {
       name: 'visual',
