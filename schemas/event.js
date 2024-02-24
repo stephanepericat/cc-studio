@@ -23,7 +23,7 @@ export default {
     },
     {
       name: 'eventInfo',
-      type: 'text',
+      type: 'localeText',
       title: 'Event Info',
     },
     {
