@@ -3,6 +3,20 @@ import {visionTool} from '@sanity/vision'
 import {deskTool} from 'sanity/desk'
 import {media} from 'sanity-plugin-media'
 import {schemaTypes} from './schemas'
+import {internationalizedArray, PluginConfig} from 'sanity-plugin-internationalized-array'
+
+const internationalizedConfig: PluginConfig = {
+  languages: [
+    {id: 'en', title: 'English'},
+    {id: 'es', title: 'Spanish'},
+    {id: 'fr', title: 'French'},
+    {id: 'pt', title: 'Portuguese'},
+  ],
+  defaultLanguages: [],
+  fieldTypes: ['string', 'text'],
+  buttonAddAll: true,
+  buttonLocations: ['field'],
+};
 
 export default defineConfig([
   {
@@ -17,6 +31,7 @@ export default defineConfig([
       deskTool(),
       media(),
       visionTool(),
+      internationalizedArray(internationalizedConfig)
     ],
   
     schema: {
@@ -35,6 +50,7 @@ export default defineConfig([
       deskTool(),
       media(),
       visionTool(),
+      internationalizedArray(internationalizedConfig)
     ],
   
     schema: {
