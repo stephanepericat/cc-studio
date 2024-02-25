@@ -21,7 +21,7 @@ export default {
   preview: {
     select: {
       subtitle: `code`,
-      title: `name.${baseLanguage.id}`
+      title: `name.0.value`
     }
   },
 }
