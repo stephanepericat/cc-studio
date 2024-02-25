@@ -6,7 +6,7 @@ export default {
   type: 'object',
   initialValue: {
     country: {
-      _ref: 'N59uZoOeVwhI1FgapL3pbz'
+      // _ref: 'N59uZoOeVwhI1FgapL3pbz'
     }
   },
   fields: [

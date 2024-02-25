@@ -8,7 +8,7 @@ export default {
   fields: [
     {
       name: 'title',
-      type: 'localeString',
+      type: 'internationalizedArrayString',
       title: 'Title',
       validation: Rule => Rule.required(),
     },
@@ -17,7 +17,7 @@ export default {
       type: 'slug',
       title: 'URI',
       options: {
-        source: `title.${baseLanguage.id}`,
+        source: `title.0.value`,
         slugify: uriGenerator,
       },
       validation: Rule => Rule.required(),
@@ -48,7 +48,7 @@ export default {
     },
     {
       name: 'description',
-      type: 'localeBlock',
+      type: 'internationalizedArrayText',
       title: 'Description',
     },
     {
@@ -69,7 +69,7 @@ export default {
     select: {
       media: 'visual',
       subtitle: `tags.0.name.${baseLanguage.id}`,
-      title: `title.${baseLanguage.id}`
+      title: `title.0.value`
     }
   },
 }

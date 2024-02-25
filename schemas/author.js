@@ -28,7 +28,7 @@ export default {
     },
     {
       name: 'bio',
-      type: 'localeText',
+      type: 'internationalizedArrayText',
       title: 'Biography',
     },
     {
