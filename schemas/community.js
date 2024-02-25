@@ -48,7 +48,7 @@ export default {
     },
     {
       name: 'description',
-      type: 'internationalizedArrayText',
+      type: 'internationalizedArrayRichText',
       title: 'Description',
     },
     {
