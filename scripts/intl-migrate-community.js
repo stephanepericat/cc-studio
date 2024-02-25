@@ -35,7 +35,8 @@ const patches = docs.map((d) => ({
   id: d._id,
   patch: {
     set: {
-      title: convertField('title', d)
+      title: convertField('title', d),
+      description: convertField('description', d)
     },
   }
 }))
