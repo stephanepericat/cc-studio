@@ -7,7 +7,7 @@ export default {
   fields: [
     {
       name: 'name',
-      type: 'localeString',
+      type: 'internationalizedArrayString',
       title: 'Country Name',
       validation: Rule => Rule.required(),
     },
