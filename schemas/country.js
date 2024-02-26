@@ -1,5 +1,3 @@
-import { baseLanguage } from "../config/languages"
-
 export default {
   name: 'country',
   type: 'document',

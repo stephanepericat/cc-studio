@@ -1,5 +1,3 @@
-import { baseLanguage } from "../config/languages"
-
 export default {
   name: 'event',
   type: 'document',
@@ -63,7 +61,7 @@ export default {
   ],
   preview: {
     select: {
-      subtitle: 'language',
+      subtitle: 'eventInfo.0.value',
       title: 'title'
     }
   },
