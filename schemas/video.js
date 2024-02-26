@@ -38,7 +38,7 @@ export default {
     },
     {
       name: 'summary',
-      type: 'localeText',
+      type: 'internationalizedArrayText',
       title: 'Summary',
     },
     {
@@ -88,7 +88,7 @@ export default {
   preview: {
     select: {
       media: 'visual',
-      subtitle: 'summary.en',
+      subtitle: 'summary.0.value',
       title: 'title'
     }
   },
