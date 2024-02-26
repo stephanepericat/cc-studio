@@ -1,5 +1,3 @@
-import { baseLanguage } from "../config/languages"
-
 export default {
   name: 'policy',
   type: 'document',
@@ -7,18 +5,18 @@ export default {
   fields: [
     {
       name: 'title',
-      type: 'localeString',
+      type: 'internationalizedArrayString',
       title: 'Policy Title',
     },
     {
       name: 'contents',
-      type: 'localeBlock',
+      type: 'internationalizedArrayRichText',
       title: 'Contents',
     },
   ],
   preview: {
     select: {
-      title: `title.${baseLanguage.id}`,
+      title: `title.0.value`,
     },
   },
 }
