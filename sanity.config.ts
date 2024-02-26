@@ -13,7 +13,15 @@ const internationalizedConfig: PluginConfig = {
     {id: 'pt', title: 'Portuguese'},
   ],
   defaultLanguages: [],
-  fieldTypes: ['string', 'text'],
+  fieldTypes: [
+    'string',
+    'text',
+    {
+      name: 'richText',
+      type: 'array',
+      of: [{type: 'block'}],
+    },
+  ],
   buttonAddAll: true,
   buttonLocations: ['field'],
 };

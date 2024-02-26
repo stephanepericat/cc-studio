@@ -1,5 +1,3 @@
-import { baseLanguage } from "../config/languages"
-
 export default {
   name: 'country',
   type: 'document',
@@ -7,7 +5,7 @@ export default {
   fields: [
     {
       name: 'name',
-      type: 'localeString',
+      type: 'internationalizedArrayString',
       title: 'Country Name',
       validation: Rule => Rule.required(),
     },
@@ -21,7 +19,7 @@ export default {
   preview: {
     select: {
       subtitle: `code`,
-      title: `name.${baseLanguage.id}`
+      title: `name.0.value`
     }
   },
 }

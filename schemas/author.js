@@ -1,5 +1,3 @@
-import { baseLanguage } from "../config/languages"
-
 export default {
   name: 'author',
   type: 'document',
@@ -28,7 +26,7 @@ export default {
     },
     {
       name: 'bio',
-      type: 'localeText',
+      type: 'internationalizedArrayText',
       title: 'Biography',
     },
     {

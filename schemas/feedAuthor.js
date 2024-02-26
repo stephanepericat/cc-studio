@@ -1,5 +1,3 @@
-import countries from '../config/countries';
-
 export default {
   title: 'Author',
   name: 'feedAuthor',

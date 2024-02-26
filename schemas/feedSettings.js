@@ -1,5 +1,3 @@
-import { baseLanguage } from "../config/languages"
-
 export default {
   name: 'feedSettings',
   type: 'document',
@@ -13,7 +11,7 @@ export default {
     },
     {
       name: 'description',
-      type: 'localeString',
+      type: 'internationalizedArrayString',
       title: 'Description',
       validation: Rule => Rule.required(),
     },
@@ -36,7 +34,7 @@ export default {
   preview: {
     select: {
       media: 'logo',
-      subtitle: `description.${baseLanguage.id}`,
+      subtitle: `description.0.value`,
       title: 'title',
     }
   },

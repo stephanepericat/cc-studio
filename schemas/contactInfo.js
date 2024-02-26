@@ -1,12 +1,10 @@
-import countries from '../config/countries';
-
 export default {
   title: 'Contact Info',
   name: 'contactInfo',
   type: 'object',
   initialValue: {
     country: {
-      _ref: 'N59uZoOeVwhI1FgapL3pbz'
+      // _ref: 'N59uZoOeVwhI1FgapL3pbz'
     }
   },
   fields: [

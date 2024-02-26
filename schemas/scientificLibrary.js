@@ -18,7 +18,7 @@ export default {
     },
     {
       name: 'summary',
-      type: 'localeText',
+      type: 'internationalizedArrayText',
       title: 'Summary',
     },
     {
