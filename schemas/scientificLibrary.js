@@ -1,4 +1,4 @@
-import { baseLanguage } from "../config/languages"
+import { uriGenerator } from '../scripts/hash-generator'
 
 export default {
   name: 'scientific-library',
@@ -14,6 +14,17 @@ export default {
       name: 'title',
       type: 'string',
       title: 'Title',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'uri',
+      type: 'slug',
+      title: 'URI',
+      options: {
+        maxLength: 10,
+        source: 'title',
+        slugify: uriGenerator
+      },
       validation: Rule => Rule.required(),
     },
     {
