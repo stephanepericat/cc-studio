@@ -50,13 +50,6 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      name: 'author',
-      type: 'reference',
-      title: 'Author',
-      to: [{type: 'author'}],
-      validation: Rule => Rule.required(),
-    },
-    {
       name: 'isEventFree',
       type: 'boolean',
       title: 'Is it Free?',
