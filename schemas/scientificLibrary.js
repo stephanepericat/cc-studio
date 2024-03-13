@@ -73,6 +73,13 @@ export default {
       title: 'Publication Date',
     },
     {
+      name: 'author',
+      type: 'reference',
+      title: 'Author',
+      to: [{type: 'author'}],
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'limitedAccess',
       type: 'boolean',
       title: 'Is it Limited Access?',
