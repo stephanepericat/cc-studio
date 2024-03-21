@@ -29,8 +29,13 @@ export default {
     {
       name: 'eventDate',
       type: 'date',
-      title: 'Event Date',
+      title: 'Event (Start) Date',
       validation: Rule => Rule.required(),
+    },
+    {
+      name: 'endDate',
+      type: 'date',
+      title: 'Event End Date (optional)',
     },
     {
       name: 'eventInfo',
